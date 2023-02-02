@@ -1,10 +1,11 @@
-import React from 'react';
+import Router from './router';    // 路由文件
+import { Routes, Link, Route } from 'react-router-dom';    // 路由插件
 
-function App() {
+const App = () => {
   return (
     <div>
-      主页
-    </div>
+      <Router />
+    </div >
   );
 }
 
