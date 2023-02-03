@@ -1,17 +1,14 @@
 import React from 'react'
-import { Layout } from 'antd';
+import { NavLink, Outlet } from 'react-router-dom'
 import './home.less'
-const { Header, Footer, Sider, Content } = Layout;
 
 export default function Home() {
   return (
-    <Layout className='main'>
-      <Header className='header'>Header</Header>
-      <Layout>
-        <Sider>Sider</Sider>
-        <Content>Content</Content>
-      </Layout>
-      <Footer>Footer</Footer>
-    </Layout>
+    <div>
+      主页
+      <NavLink to={'/B'}>{'B页'}</NavLink>
+      <NavLink to={'/C'}>C页</NavLink>
+      <Outlet></Outlet>
+    </div>
   )
 }

@@ -13,12 +13,12 @@ const routers = [
       {
         path: '/C',
         element: <C />
-      }
+      },
+      {
+        path: '/B',
+        element: <B />
+      },
     ]
-  },
-  {
-    path: '/B',
-    element: <B />
   },
   {
     path: "*",
