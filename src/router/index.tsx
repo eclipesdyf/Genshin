@@ -1,22 +1,22 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 
-import Home from "../pages/Home";
-import B from "../pages/B";
-import C from "../pages/C"
+import Layout from "../pages/Layout";
+import Figure from "../pages/Figure";
+import Weapon from "../pages/Weapon"
 import NotFount from "../pages/NotFount";
 const routers = [
   {
     path: '/',
-    element: <Home />,
+    element: <Layout />,
     children: [
       {
-        path: '/C',
-        element: <C />
+        path: '/weapon',
+        element: <Weapon />
       },
       {
-        path: '/B',
-        element: <B />
+        path: '/figure',
+        element: <Figure />
       },
     ]
   },
